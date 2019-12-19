@@ -218,15 +218,12 @@ let total = () => {
         })
     }
     var nilai_pjk = document.querySelector('input#input_pjk').value;
-    console.log(nilai_pjk);
     var nilai_disk = document.querySelector('input#input_disk').value;
-    console.log(nilai_disk);
 
-    console.log(jml);
     document.querySelector('#tot').innerHTML = jml;
     document.querySelector('#disk').innerHTML = disk = jml * nilai_disk / 100;
     document.querySelector('#pjk').innerHTML = pjk = jml * nilai_pjk / 100;
-    document.querySelector('#payable').innerHTML = disk + pjk;
+    document.querySelector('#payable').innerHTML = jml + disk + pjk;
 }
 let total_item = () => {
     let jml = 0;
