@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>tugass</title>
+</head>
+
+<body>
+
+    <div class="table">
+        <div>
+            <table border="1" width="100%" style="background-color: cornsilk;border: black solid 2px;">
+                <thead>
+                    <tr>
+                        <td colspan="2">
+                            <select name="" id="" style="width: 100%;">
+                                <option value="">costumer Menu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="date"> </td>
+                        <td><input type="text" placeholder="table number" style="width: 98%;"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" class="a" placeholder="search product by code" style="width: 99%;">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div id="konten">
+            <table border="1" width="100%"
+                style="background-color: cornsilk;border: black solid 2px; text-align: center;">
+                <thead>
+                    <tr style="background-color: grey; color: white;">
+                        <td>produ</td>
+                        <td>prince</td>
+                        <td>Qty</td>
+                        <td>subtotal</td>
+                        <td><button onclick="location.reload()">del All</button></td>
+                    </tr>
+                </thead>
+                <tbody id="list"> </tbody>
+            </table>
+
+
+        </div>
+        <div>
+            <table border="1" width="100%" style="border: black solid 2px;">
+                <thead>
+
+                    <tr>
+                        <td>
+                            <label for="">total item</label>
+                        </td>
+                        <td>
+                            <b> = <span id='item'></span></b>
+                        </td>
+                        <td>
+                            <label for="">total harga</label>
+                        </td>
+                        <td>
+                            <b> = <span id='tot'></span></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="">total diskon 20%</label>
+                        </td>
+                        <td colspan="2">
+                            <span id='disk'></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="">total pajak 10%</label>
+                        </td>
+                        <td colspan="2">
+                            <span id='pjk'></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="">total payable</label>
+                        </td>
+                        <td colspan="2">
+                            <span id='payable'></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: orange;">save</td>
+                        <td colspan="2" style="background-color:antiquewhite ;">print</td>
+                        <td style="background-color:green ;" rowspan="2">payment</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color:lightsalmon ;">sales order</td>
+                        <td colspan="2" style="background-color: lightcyan;">print bill</td>
+                    </tr>
+                </thead>
+
+            </table>
+        </div>
+    </div>
+
+    <div id="page">
+        <select name="" id="">
+            <option value="">all category</option>
+        </select>
+        <input type="text" placeholder="  filter produk by code" class="input_kode">
+
+        <div style="margin: 10px;">
+            <span id="konten1"> <span></span></span>
+        </div>
+
+    </div>
+    <script src="javascript.js"></script>
+
+
+
+</body>
+
+</html>
