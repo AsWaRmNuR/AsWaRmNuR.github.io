@@ -1,62 +1,77 @@
-.table{
+.table {
     float: left;
     height: 100%;
     padding: 10px;
     width: 25%;
     background-color: blanchedalmond;
- }
-#konten{
+}
+
+#konten {
     height: 380px;
     overflow: auto;
 }
- #cetak{
-     width: 100%;
-     height: 60%; 
- }
- 
- #page{
-     width: 73%;
+
+#cetak {
+    width: 100%;
+    height: 60%;
+}
+
+#page {
+    width: 73%;
     float: right;
- }
- 
- .input_kode{
-     float: right;
-     border-radius: 20px;
- }
- .btn_img{
+}
+
+.input_kode {
     float: right;
-     width: 150px;
-     height: 170px;
-     padding: 0;
-     margin: 10px 5px ; /* 10 atas bawah 3 kiri kanan*/
-     background-color: blanchedalmond;
- }
- img{
-     width: 100%;
-     height: 80%;
-     background-color: brown;
-     
- }
- .hr:hover{
-     height: 100%; 
-     background-color: cornflowerblue;
- }
- .p_harga{
-     width: 100%;
-     position: relative;
-     bottom: 15px;
-     margin: 0;
-     background-color:black;
-     color: white;
-     opacity: 0.7;
-     
- }
- .p_nama{
-     width: 100%;
-     position: relative;
-     bottom: 10px;
-     margin: 0;
- }
- 
- 
- 
+    border-radius: 100px;
+}
+
+.btn_img {
+    float: right;
+    width: 150px;
+    height: 170px;
+    padding: 0;
+    margin: 10px 5px;
+    /* 10 atas bawah 3 kiri kanan*/
+    background-color: blanchedalmond;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    background-color: brown;
+
+}
+
+.hr:hover {
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+.p_harga {
+    width: 100%;
+    position: relative;
+    bottom: 15px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+
+}
+
+.p_nama {
+    width: 100%;
+    position: relative;
+    bottom: 10px;
+    margin: 0;
+}
+
+#result_pjk,
+#result_disk,
+#input_pjk,
+#input_disk {
+    float: right;
+    border-radius: 20px;
+    text-align: center;
+
+}

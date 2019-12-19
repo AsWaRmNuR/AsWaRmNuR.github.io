@@ -71,8 +71,10 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <label for="">total diskon 20%</label>
-                            <input id="input_disk" type="number" value="" style="width: 50px;"></input>
+                            <label for="input_disk">total diskon </label>
+                            <span id="result_disk">%</span>
+                            <input id="input_disk" type="number" placeholder="input" value="" style="width: 50px;"
+                                min="0">
                         </td>
                         <td colspan="2">
                             <span id='disk'></span>
@@ -80,9 +82,10 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <label for="">total pajak 10%</label>
-
-                            <input id="input_pjk" type="number" value="" style="width: 50px;"></input>
+                            <label for="input_pjk">total pajak </label>
+                            <span id="result_pjk">%</span>
+                            <input id="input_pjk" type="number" placeholder="input" value="" style="width: 50px;"
+                                min="0">
                         </td>
                         <td colspan="2">
                             <span id='pjk'></span>

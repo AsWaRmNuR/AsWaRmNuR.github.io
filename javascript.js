@@ -193,30 +193,23 @@ let hapus = (idHps) => {
     total_item();
 }
 
-// let fun_disk = () => {
-//     let Vdisk = document.querySelector('input#input_disk').value;
-//     console.log(Vdisk);
-//     total(Vdisk);
-// }
 let Vdisk = document.querySelector('input#input_disk');
-Vdisk.addEventListener('click', function () {
-    let hsl = document.querySelector('input#input_disk').value;
-    console.log(hsl);
-    total(hsl);
-});
-// let fun_pjk = () => {
-//     let Vpjk = document.querySelector('input#input_pjk').value;
-//     console.log(Vpjk);
-//     total(Vpjk);
-// }
-let Vpjk = document.querySelector('input#input_pjk');
-Vpjk.addEventListener('click', function () {
-    let hsl2 = document.querySelector('input#input_pjk').value;
-    console.log(hsl2);
-    total(hsl2);
+Vdisk.addEventListener('input', function () {
+    // var hsl = document.querySelector('input#input_disk').value;
+    Vdisk.value;
+    total();
 });
 
-let total = (nilai) => {
+let Vpjk = document.querySelector('input#input_pjk');
+Vpjk.addEventListener('input', function () {
+    // var hsl2 = document.querySelector('input#input_pjk').value;
+    Vpjk.value;
+    total();
+});
+
+
+
+let total = () => {
     let jml = 0;
     let subtotals = document.querySelectorAll('#list tr td label.subtotal');
     if (subtotals.length > 0) {
@@ -224,10 +217,15 @@ let total = (nilai) => {
             jml += Number(subtot.innerText);
         })
     }
+    var nilai_pjk = document.querySelector('input#input_pjk').value;
+    console.log(nilai_pjk);
+    var nilai_disk = document.querySelector('input#input_disk').value;
+    console.log(nilai_disk);
+
     console.log(jml);
     document.querySelector('#tot').innerHTML = jml;
-    document.querySelector('#disk').innerHTML = disk = jml * nilai / 100;
-    document.querySelector('#pjk').innerHTML = pjk = jml * nilai / 100;
+    document.querySelector('#disk').innerHTML = disk = jml * nilai_disk / 100;
+    document.querySelector('#pjk').innerHTML = pjk = jml * nilai_pjk / 100;
     document.querySelector('#payable').innerHTML = disk + pjk;
 }
 let total_item = () => {
