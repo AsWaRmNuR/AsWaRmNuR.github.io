@@ -193,16 +193,28 @@ let hapus = (idHps) => {
     total_item();
 }
 
-let disk = document.querySelector('input#input_disk');
-disk.addEventListener('onclick', function () {
-    let hsl = disk.value;
+// let fun_disk = () => {
+//     let Vdisk = document.querySelector('input#input_disk').value;
+//     console.log(Vdisk);
+//     total(Vdisk);
+// }
+let Vdisk = document.querySelector('input#input_disk');
+Vdisk.addEventListener('click', function () {
+    let hsl = document.querySelector('input#input_disk').value;
+    console.log(hsl);
     total(hsl);
-})
-let pjk = document.querySelector('input#input_pjk');
-pjk.addEventListener('onclick', function () {
-    let hsl = pjk.value;
-    total(hsl)
-})
+});
+// let fun_pjk = () => {
+//     let Vpjk = document.querySelector('input#input_pjk').value;
+//     console.log(Vpjk);
+//     total(Vpjk);
+// }
+let Vpjk = document.querySelector('input#input_pjk');
+Vpjk.addEventListener('click', function () {
+    let hsl2 = document.querySelector('input#input_pjk').value;
+    console.log(hsl2);
+    total(hsl2);
+});
 
 let total = (nilai) => {
     let jml = 0;
