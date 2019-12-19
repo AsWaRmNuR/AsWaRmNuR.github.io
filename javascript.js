@@ -189,11 +189,22 @@ let setInput = (ths, id, harga) => {
 let hapus = (idHps) => {
     let s = document.querySelector('tbody tr#' + idHps).remove();
     console.log(s);
-
     total();
     total_item();
 }
-let total = () => {
+
+let disk = document.querySelector('input#input_disk');
+disk.addEventListener('onclick', function () {
+    let hsl = disk.value;
+    total(hsl);
+})
+let pjk = document.querySelector('input#input_pjk');
+pjk.addEventListener('onclick', function () {
+    let hsl = pjk.value;
+    total(hsl)
+})
+
+let total = (nilai) => {
     let jml = 0;
     let subtotals = document.querySelectorAll('#list tr td label.subtotal');
     if (subtotals.length > 0) {
@@ -203,8 +214,8 @@ let total = () => {
     }
     console.log(jml);
     document.querySelector('#tot').innerHTML = jml;
-    document.querySelector('#disk').innerHTML = disk = jml * 20 / 100;
-    document.querySelector('#pjk').innerHTML = pjk = jml * 10 / 100;
+    document.querySelector('#disk').innerHTML = disk = jml * nilai / 100;
+    document.querySelector('#pjk').innerHTML = pjk = jml * nilai / 100;
     document.querySelector('#payable').innerHTML = disk + pjk;
 }
 let total_item = () => {
