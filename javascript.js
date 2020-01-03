@@ -127,13 +127,11 @@ let list_prk = () => { //sama aja yg saya komen di atas
         // console.log(wadah);
     });
 }
-
+// menampilkan ke menunya
 list_prk();
 //menampilkan produk ke table
 let list_table = (id, harga, makanan) => {
-
     const keranjang = document.querySelectorAll('#list tr');
-
     if (keranjang.length > 0) {
         let jika_hasilnya_sama = false;
         keranjang.forEach(card => {
@@ -223,7 +221,7 @@ let total = () => {
     document.querySelector('#tot').innerHTML = jml;
     document.querySelector('#disk').innerHTML = disk = jml * nilai_disk / 100;
     document.querySelector('#pjk').innerHTML = pjk = jml * nilai_pjk / 100;
-    document.querySelector('#payable').innerHTML = jml + disk + pjk;
+    document.querySelector('#payable').innerHTML = jml - disk + pjk;
 }
 let total_item = () => {
     let jml = 0;
